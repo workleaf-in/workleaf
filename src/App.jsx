@@ -31,7 +31,7 @@ const App = () => {
   // }
 
   return (
-    <div className="bg-white text-black font-sans  h-auto">
+    <div className="bg-white text-black font-sans  h-auto overflow-hidden mx-0.5">
       {/* hero-section-start */}
 
       <div
@@ -84,7 +84,7 @@ const App = () => {
         </header>
       </div>
 
-      <div className="h-4 w-full bg-black"></div>
+      <div className="h-4 w-full bg-black overflow-visible"></div>
 
       {/* Table of content */}
 
@@ -176,21 +176,23 @@ const App = () => {
             <div className="h-auto w-full sm:w-[95%] flex flex-col lg:flex-row">
               {/* Left Section */}
               <div className="h-auto w-full lg:w-[70%]">
-                <div className="h-[200px] w-[90%] border-b-4 border-none flex items-center justify-end mx-auto">
-                  <img
-                    src={logo}
-                    alt=""
-                    className="h-[100px] w-[100px] sm:h-[120px] sm:w-[120px] mr-[120px]"
-                  />
+                <div className="flex flex-col sm:flex-row-reverse">
+                  <div className="h-[200px] w-[90%] border-b-4 border-none flex items-center justify-end mx-auto">
+                    <img
+                      src={logo}
+                      alt=""
+                      className="h-[100px] w-[100px] sm:h-[120px] sm:w-[120px] mr-[120px]"
+                    />
+                  </div>
+
+                  <div className="h-auto w-[90%] border-b-4 border-none flex items-center mb-6  mt-1 ml-8">
+                    <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-black pl-4">
+                      Introduction
+                    </h1>
+                  </div>
                 </div>
 
-                <div className="h-auto w-[90%] border-b-4 border-none flex items-center mb-6  mt-1 ml-6">
-                  <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-black pl-4">
-                    Introduction
-                  </h1>
-                </div>
-
-                <div className="w-full border-b-4 bg-black py-10 px-4 mx-auto mb-2">
+                <div className="w-full border-b-4 bg-black py-10 px-4 mx-auto mb-2 h-[430px] ">
                   <h1 className="text-xl sm:text-2xl font-normal text-white leading-relaxed text-center max-w-4xl mx-auto">
                     Workleaf Manpower Solution is a leading provider of staffing
                     and manpower solutions, specializing in the construction
@@ -219,42 +221,47 @@ const App = () => {
         </div>
       </div>
 
-      {/* About Our Company */}
       <div className="h-4 w-full bg-black"></div>
+      {/* About Our Company */}
 
-      <div className="relative h-auto w-full  flex items-center justify-center flex-col mt-20">
-        <div className="h-auto w-[90%]  flex items-center justify-center z-10">
-          <div className="h-auto w-full  lg:flex  z-10 bg-white">
-            <div className="h-auto w-full lg:w-[50%]  flex  flex-col">
-              <div className="mb-30 mt-7  ml-10 flex flex-col-reverse sm:flex-row-reverse">
-                <div className=" width:270px">
-                  <h2 className="md:text-5xl  font-bold  mb-5 leading-13 tracking-wide text-1xl">
+      <div className="relative h-auto w-full flex items-center justify-center flex-col mt-20">
+        <div className="h-auto w-[90%] flex items-center justify-center z-10">
+          <div className="h-auto w-full lg:flex z-10 bg-white">
+            <div className="h-auto w-full lg:w-[50%] flex flex-col">
+              <div className="mb-10 mt-7 ml-10 flex flex-col-reverse sm:flex-row-reverse justify-center gap-3">
+                <div className="w-full sm:w-[270px]">
+                  <h2 className="md:text-5xl text-3xl font-bold mb-5 leading-tight tracking-wide">
                     About Our Company
                   </h2>
                 </div>
-                <div className="w-[20%]  flex justify-center items-center ">
-                  <img src={logo} alt="" className="h-[130px] w-[130px] " />
+                <div className="w-[40%] sm:w-[20%] flex justify-center items-center">
+                  <img
+                    src={logo}
+                    alt="Company Logo"
+                    className="h-[130px] w-[130px]"
+                  />
                 </div>
               </div>
 
               <div className="h-auto w-full flex items-center justify-center mb-10">
                 <img
                   src={aboutcompany}
-                  alt=""
-                  className="h-[240px] w-[90%] shadow-xl"
+                  alt="About Company"
+                  className="h-[240px] w-[90%] sm:h-[200px] md:h-[240px] shadow-xl"
                 />
               </div>
             </div>
-            <div className="h-auto lg:w-[50%] w-full  flex items-center-justify-center  flex-col">
+
+            <div className="h-auto lg:w-[50%] w-full flex items-center justify-center flex-col">
               <div className="m-4">
                 <span className="py-1 w-2 bg-amber-400 text-amber-400">
-                  jkllk
+                  abc
                 </span>
-                <span className="md:text-2xl text-sm ml-10 font-bold ">
+                <span className="md:text-2xl text-sm ml-10 font-bold">
                   A Brief Story About The Company
                 </span>
 
-                <h1 className="mt-4 ml-18 md:text-2xl text-sm font-base">
+                <h1 className="mt-4 ml-0 sm:ml-8 md:text-2xl text-sm font-base">
                   Workleaf Manpower Solution was established to address the
                   growing need for specialized manpower in the construction
                   industry. Our journey began with a vision to bridge the gap
@@ -266,13 +273,13 @@ const App = () => {
 
               <div className="m-5">
                 <span className="py-1 w-2 bg-amber-400 text-amber-400">
-                  jkllk
+                  aej
                 </span>
-                <span className="md:text-2xl text-sm ml-10 font-bold ">
+                <span className="md:text-2xl text-sm ml-10 font-bold">
                   Core Value
                 </span>
 
-                <h1 className="mt-4 ml-18 md:text-2xl text-sm font-base">
+                <h1 className="mt-4 ml-0 sm:ml-8 md:text-2xl text-sm font-base">
                   Integrity: We uphold the highest standards of honesty and
                   integrity in all our actions. Reliability: Our clients count
                   on us to deliver the right workforce solutions every time.
@@ -283,40 +290,40 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="lg:h-[400px] h-[800px] w-full   flex items-end justify-start bg-black absolute  lg:top-[70%]  top-[60%]">
+
+        <div className="lg:h-[400px] h-[600px] w-full flex items-end justify-start bg-black absolute lg:top-[70%] top-[60%]">
           <div className="w-full h-auto ml-30 mb-10">
-            <span className="text-white text-xl  border-2 border-white">
-              www.workleaf.com
-            </span>{" "}
-            <span className=" ml-40 h-1px bg-amber-400 text-[1px] text-amber-400 border-2 border-white hidden md:inline">
-              kjhgkjhgfghjkljhgfdghjkljhgfdghjkljhgfdghjklkjhgfhjkl;kjhghjkljhgfhjklkjhgfhjklkjhgfhjkl;kjhgfhjkl;kjhgfhjklfdsghjkljhgfdghjkljhgfdghjkljhgfghjkl.kjhgfhjklkjhgkjhgfghjkljhgfdghjkljhgfdghjkljhgfdghjklkjhgfhjkl;kjhghjkljhgfhjklkjhgfhjklkjhgfhjkl;kjhgfhjkl;kjhgfhjklfdsghjkljhgfdghjkljhgfdghjkljhgfghjkl.kjhgfhjklkjhgkjhgfghjkljhgfdghjkljhgfdghjkljhgfdghjklkjhgfhjkl;kjhghjkljhgfhjklkjhgfhjklkjhgfhjkl;kjhgfhjkl;kjhgfhjklfdsghjkljhgfdghjkljhgfdghjkljhgfghjkl.kjhgfhjklkjhgkjhgfghjkljhgfdghjkljhgfdghjkljhgfdghjklkjhgfhjkl;kjhghjkljhgfhjklkjhgfhjklkjhgfhjkl;kjhgfhjkl;kjhgfhjklfdsghjkljhgfdghjkljhgfdghjkljhgfghjkl.kjhgfhjkl
-            </span>
+            <span className="text-white text-xl ">www.workleaf.com</span>
+            {/* <span className="ml-40 h-1px bg-amber-400 text-[1px] text-amber-400 border-2 border-white hidden md:inline">
+              kjhgkjhgfghjkljhgfdghjkljhgfdghjkljhgfdghjklkjhgfhjkl;kjhghjkljhgfhjklkjhgfhjklkjhgfhjkl;kjhgfhjkl;kjhgfhjklfdsghjkljhgfdghjkljhgfdghjkljhgfghjkl.kjhgfhjklkjhgkjhgfghjkljhgfdghjkljhgfdghjkljhgfdghjklkjhgfhjkl;kjhghjkljhgfhjklkjhgfhjklkjhgfhjkl;kjhgfhjkl;kjhgfhjklfdsghjkljhgfdghjkljhgfdghjkljhgfghjkl.kjhgfhjklkjhgkjhgfghjkljhgfdghjkljhgfdghjkljhgfdghjklkjhgfhjkl;kjhghjkljhgfhjklkjhgfhjklkjhgfhjkl;kjhgfhjkl;kjhgfhjklfdsghjkljhgfdghjkljhgfdghjkljhgfghjkl.kjhgfhjklkjhgkjhgfghjkljhgfdghjkljhgfdghjkljhgfdghjklkjhgfhjkl;kjhghjkljhgfhjklkjhgfhjklkjhgfhjkl;kjhgfhjkl;kjhgfhjklfdsghjkljhgfdghjkljhgfdghjkljhgfghjkl.kjhgfhjklkjhgkjhgfghjkljhgfdghjkljhgfdghjkljhgfdghjklkjhgfhjkl;kjhghjkljhgfhjklkjhgfhjklkjhgfhjkl;kjhgfhjkl;kjhgfhjklfdsghjkljhgfdghjkljhgfdghjkljhgfghjkl.kjhgfhjklkjhgkjhgfghjkljhgfdghjkljhgfdghjkljhgfdghjklkjhgfhjkl;kjhghjkljhgfhjklkjhgfhjklkjhgfhjkl;kjhgfhjkl;kjhgfhjklfdsghjkljhgfdghjkljhgfdghjkljhgfghjkl.kjhgfhjkl
+            </span> */}
           </div>
         </div>
       </div>
 
       {/* our vision section */}
+      <div className="h-4 w-full bg-black "></div>
 
-      <div className="h-auto w-full  flex lg:mt-60 md:mt-110 sm:mt-120 mt-110 ">
+      <div className="h-auto w-full flex lg:mt-60 md:mt-110 sm:mt-120 mt-110 flex-col lg:flex-row">
         <div className="h-full w-full lg:flex">
-          <div className="lg:w-[35%] w-full h-auto  relative">
+          <div className="lg:w-[35%] w-full h-auto relative">
             <div className="flex items-center justify-center">
-              <h1 className="text-5xl font-bold border-b-4 border-amber-400 w-[300px] pb-8 text-center">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold border-b-4 border-amber-400 w-[250px] sm:w-[300px] pb-8 text-center">
                 Our Vision
               </h1>
             </div>
             <div className="h-[300px] w-full mb-20 border-b-12 border-black">
               <img
                 src={ourvision}
-                alt=""
-                className="h-full w-full my-18 shadow-2xl"
+                alt="Our Vision"
+                className="h-full w-full object-cover shadow-2xl"
               />
             </div>
           </div>
 
-          <div className="lg:w-[65%] w-full h-auto ">
-            <div className="w-[100%] h-auto md:pl-40 pl-10 mt-10 ">
-              <h1 className="md:text-4xl text-2xl  font-bold">Vision</h1>
+          <div className="lg:w-[65%] w-full h-auto">
+            <div className="w-full h-auto md:pl-40 pl-10 mt-10">
+              <h1 className="md:text-4xl text-2xl font-bold">Vision</h1>
               <p className="md:text-2xl text-xl mt-5 w-[90%]">
                 To be the leading provider of specialized manpower solutions in
                 the construction industry, recognized for our quality,
@@ -324,17 +331,17 @@ const App = () => {
               </p>
             </div>
 
-            <div className="w-full h-auto  mt-10  flex mb-18">
-              <div className=" none md:block h-[70px] w-[140px]  ml-7">
+            <div className="w-full h-auto mt-10 flex mb-18 flex-col md:flex-row">
+              <div className="none md:block h-[70px] w-[140px] ml-7 mb-5 md:mb-0">
                 <img
                   src={herobanner}
-                  alt=""
-                  className="w-full h-full none md:block "
+                  alt="Hero Banner"
+                  className="w-full h-full"
                 />
               </div>
               <div className="md:ml-21 ml-10">
                 <h1 className="md:text-4xl text-2xl font-bold">Mission</h1>
-                <p className="md:text-2xl text-xl mt-5 mr-20 ">
+                <p className="md:text-2xl text-xl mt-5 mr-20">
                   Our mission is to connect skilled professionals with
                   construction projects, ensuring that our clients achieve their
                   objectives efficiently and effectively. We are committed to
@@ -345,28 +352,34 @@ const App = () => {
               </div>
             </div>
 
-            <div className="h-[250px] w-full bg-black flex items-start justify-end relative  mb-1">
+            <div className="h-[250px] w-full bg-black flex items-start justify-end relative mb-2 ">
               <img
                 src={ourvisiontwo}
-                alt=""
+                alt="Our Vision"
                 className="h-[130px] w-[50%] absolute top-[-60px] shadow-xl"
               />
 
-              <div className="flex justify-end items-end  mt-25 mr-10">
-                <img src={logo} alt="" className="h-[130px] w-[130px]" />
+              {/* Add a wrapper div with higher z-index to ensure visibility */}
+              <div className="flex justify-end items-end mt-25 mr-10 relative z-10">
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="h-[130px] w-[130px] bg-amber-50 rounded"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="h-4 w-full bg-black"></div>
+
+      <div className="h-4 w-full bg-black ww"></div>
       {/* Our Services */}
 
       {/* logo pending */}
 
       <div className="h-auto w-full  mt-20 xl:flex items-center justify-center">
         <div className="sm:h-[800px] h-[550px] xl:w-[30%] w-[60%]  flex items-center justify-center flex-col bg-black relative ">
-          <div className="sm:h-[600px] h-[450px] w-full flex   flex-col bg-amber-400 absolute sm:left-40 left-20">
+          <div className="sm:h-[600px] h-[460px] w-full flex   flex-col bg-amber-400 absolute sm:left-40 left-20">
             <div className="sm:ml-20 ml-5">
               <h3 className="sm:text-6xl text-4xl mb-10 mt-20 font-base text-white w-[60%] border-b-8 border-white pb-6">
                 Our Services
@@ -408,7 +421,7 @@ const App = () => {
               />
             </div>
 
-            <div className="h-auto w-full  flex 2xl:flex border-b-4 border-amber-400 mt-5">
+            <div className="h-auto w-full  flex 2xl:flex border-b-4 flex-col sm:flex-row gap-[-10px] border-amber-400 mt-5">
               <div className="h-80 2xl:w-[40%] w-[90%]  flex flex-col items-center justify-center">
                 <h1 className="bg-amber-400 rounded-3xl font-bold text-white sm:text-xl text-sm text-center py-3 my-1 sm:w-[250px] w-[150px]">
                   Manpower Supply
@@ -526,7 +539,7 @@ const App = () => {
               <img
                 src={logo}
                 alt=""
-                className="sm:h-[200px] sm:w-[200px] h-[150px] w-[150px] "
+                className="sm:h-[200px] sm:w-[200px] h-[100px] w-[100px] ml-12 bg-white rounded "
               />
             </div>
           </div>
@@ -687,7 +700,7 @@ const App = () => {
             <img
               src={logo}
               alt=""
-              className="sm:h-[100px] sm:w-[100px] h-[100px] w-[100px]"
+              className="sm:h-[100px] sm:w-[100px] h-[100px] w-[100px] ml-16 sm:ml-0"
             />
           </div>
 
@@ -789,86 +802,81 @@ const App = () => {
 
       <div className="h-4 w-full bg-black"></div>
       {/* Lets connect with us */}
-
-      <div className="h-auto w-full  flex items-end justify-start mt-5 ">
-        <div className="h-auto w-[94%]  lg:flex mt-8">
-          <div className="h-auto lg:w-[50%] w-[100%]  flex items-center justify-center">
-            <div className="sm:h-[700px] h-[450px] w-[40%]  ">
-              <div className="h-[60%] w-full ">
-                <h1 className="lg:text-5xl md:text-4xl text-3xl lg:ml-14 ml-4 w-[80%]  font-boldpb-20">
-                  <span className="border-amber-400 border-b-4 pb-40">
+      <div className="h-auto w-full flex items-end justify-start mt-5">
+        <div className="h-auto w-[94%] lg:flex mt-8 flex-col sm:flex-row">
+          {/* Left Section */}
+          <div className="h-auto lg:w-[50%] w-full flex items-center justify-center">
+            <div className="sm:h-[700px] h-[450px] w-[80%] sm:w-[80%]">
+              <div className="h-[60%] w-full">
+                <h1 className="lg:text-5xl md:text-4xl text-3xl lg:ml-14 ml-4 w-[80%] font-bold pb-20 text-center sm:text-left">
+                  <span className="border-amber-400 border-b-4 pb-4">
                     Let`s
                   </span>
                   <br />
                   <span>Connect With Us!</span>
                 </h1>
               </div>
-              <div className="h-[40%] w-full  bg-amber-400 "></div>
+              <div className="h-[40%] w-full bg-amber-400"></div>
             </div>
-            <div className="sm:h-[600px] h-[350px] w-[60%]  relative shadow-2xl ">
+            <div className="sm:h-[600px] h-[350px] w-[100%] relative shadow-2xl">
               <img
                 src={connectus}
-                alt=""
-                className="h-full lg:w-full sm:w-[90%] absolute lg:left-30  shadow-2xl"
+                alt="Connect with Us"
+                className="h-full lg:w-full sm:w-[90%] absolute top-0 left-0 shadow-2xl"
               />
             </div>
           </div>
-          <div className="h-auto lg:w-[50%] w-[100%]  bg-black flex flex-col justify-center items-center">
-            <div className="h-auto w-[60%]  text-white xl:ml-50 lg:ml-40  lg:mb-10 lg:mt-10 mb-3 mt-3 flex">
-              <div className="h-[200px] w-[40%]  bg-white">
-                <img
-                  src={logo}
-                  alt=""
-                  className="h-full w-full bg-black color-white"
-                />
+
+          {/* Right Section */}
+          <div className="h-auto lg:w-[50%] w-full bg-black flex flex-col justify-center items-center">
+            <div className="h-auto w-[80%] text-white mb-3 mt-3 flex justify-center items-center">
+              <div className="bg-white rounded">
+                <img src={logo} alt="Logo" className="h-[100px] w-[100px] " />
               </div>
             </div>
 
-            <div className="h-auto w-[60%]  text-white xl:ml-50 lg:ml-40  lg:mb-10 lg:mt-10 mb-3 mt-3 flex">
-              <div className="h-[100px] w-[20%] ">
-                {/* <img src={herobanner} alt="" className="h-full w-full" /> */}
-                {/* <MdAddIcCall /> */}
+            {/* Phone Section */}
+            <div className="h-auto w-[80%] text-white mb-6 flex sm:flex-row flex-col justify-start items-center">
+              <div className="h-[50px] w-[20%] flex justify-center items-center">
                 <BiSolidPhoneCall className="h-full w-full" />
               </div>
-              <div className="h-[100px] w-[80%]  sm:text-2xl text-lg flex  justify-center flex-col pl-6">
+              <div className="h-[100px] w-[80%] text-lg flex justify-start flex-col pl-6 sm:text-2xl">
                 <h1>+91 7975206742</h1>
                 <h1>+91 8073974663</h1>
               </div>
             </div>
 
-            <div className="h-auto w-[60%] text-white xl:ml-50 lg:ml-40  lg:mb-10 lg:mt-10 mb-3 mt-3 flex">
-              <div className="h-[100px] w-[20%] ">
-                {/* <img src={herobanner} alt="" className="h-full w-full" /> */}
+            {/* Email Section */}
+            <div className="h-auto w-[80%] text-white mb-6 flex sm:flex-row flex-col justify-start items-center">
+              <div className="h-[50px] w-[20%] flex justify-center items-center">
                 <FiMail className="h-full w-full" />
               </div>
-              <div className="h-[100px] w-[80%]  sm:text-2xl text-lg flex  justify-center flex-col pl-6">
+              <div className="h-[100px] w-[80%] text-lg flex justify-start flex-col pl-6 sm:text-2xl">
                 <h1 className="font-bold">Mail</h1>
-                <h1 className="sm:text-2xl text-lg">
+                <h1 className="text-lg sm:text-2xl">
                   <a
                     href="mailto:narendrachillal1900@gmail.com"
                     target="_blank"
-                    className="text-blue-800 underline "
+                    className="text-blue-800 underline"
                   >
-                    workleafwebpage@gmail.com
+                    Swathi@workleaf.in
                   </a>
-                  in
-                  {/* <button onClick={contactEmail}>Email</button> */}
                 </h1>
               </div>
             </div>
 
-            <div className="h-auto w-[60%]  text-white xl:ml-50 lg:ml-40  lg:mb-10 lg:mt-10 mb-3 mt-3 flex">
-              <div className="h-[100px] w-[20%] ">
-                {/* <img src={herobanner} alt="" className="h-full w-full" /> */}
+            {/* Website Section */}
+            <div className="h-auto w-[80%] text-white mb-6 flex sm:flex-row flex-col justify-start items-center">
+              <div className="h-[50px] w-[20%] flex justify-center items-center">
                 <TfiWorld className="h-full w-full" />
               </div>
-              <div className="h-[100px] w-[80%]  sm:text-2xl text-lg flex  justify-center flex-col pl-6">
+              <div className="h-[100px] w-[80%] text-lg flex justify-start flex-col pl-6 sm:text-2xl">
                 <h1 className="font-bold">Website</h1>
-                <h1 className="sm:text-2xl text-lg">
+                <h1 className="text-lg sm:text-2xl">
                   <a
                     href="workleaf.vercel.app"
                     target="_blank"
-                    className="text-blue-800 underline "
+                    className="text-blue-800 underline"
                   >
                     www.workleaf.com
                   </a>
@@ -876,18 +884,19 @@ const App = () => {
               </div>
             </div>
 
-            <div className="h-auto w-[60%]  text-white xl:ml-50 lg:ml-40  lg:mb-10 lg:mt-10 mb-3 mt-3 flex">
-              <div className="h-[100px] w-[20%] border-2 oborder-white">
-                {/* <img src={connectus} alt="" className="h-full w-full" /> */}
+            {/* Address Section */}
+            <div className="h-auto w-[80%] text-white mb-6 flex sm:flex-row flex-col justify-start items-center">
+              <div className="h-[50px] w-[20%] flex justify-center items-center">
                 <IoLocationOutline className="h-full w-full" />
               </div>
-              <div className="h-[130px] w-[80%]  sm:text-2xl text-lg flex  justify-center flex-col pl-6">
-                <h1 className="font-bold">Adress</h1>
-                <p className="sm:text-xl text-sm">
-                  #663 lakshmi nilaya K R PURAM,
+              <div className="h-[130px] w-[80%] text-lg flex justify-start flex-col pl-6 sm:text-2xl">
+                <h1 className="font-bold">Address</h1>
+                <p className="text-sm sm:text-xl">
+                  #663 Lakshmi Nilaya K R Puram,
                 </p>
-                <p className="sm:text-xl text-sm">BANGLORE,</p>
-                <p className="sm:text-xl text-sm">, Karnataka-560036</p>
+                <p className="text-sm sm:text-xl">
+                  Bangalore, Karnataka-560036
+                </p>
               </div>
             </div>
           </div>

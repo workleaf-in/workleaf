@@ -47,13 +47,13 @@ const App = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="flex flex-col justify-center items-start px-4 sm:px-10 py-10 mt-10 sm:mt-20">
-              <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-black mb-2">
+              <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-white sm:text-black mb-2">
                 WORKLEAF
               </h1>
-              <h2 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-black">
+              <h2 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-white sm:text-black">
                 SOLUTIONS PVT LTD
               </h2>
-              <p className="text-black mt-4 text-base sm:text-xl lg:text-2xl font-bold w-full sm:w-[80%] lg:w-[60%]">
+              <p className=" sm:text-black mt-4 text-base sm:text-xl lg:text-2xl font-bold w-full sm:w-[80%] lg:w-[60%]">
                 DELIVERING THE BEST IN EVERY MANPOWER SOLUTION—TAILORED TO YOUR
                 NEEDS.
               </p>
@@ -122,7 +122,12 @@ const App = () => {
 
             <div className="flex justify-center lg:justify-start w-full">
               <h1 className="my-10 text-blue-900 text-sm sm:text-lg underline">
-                <a href="https://www.workleaf.com">www.workleaf.com</a>
+                <a
+                  href="https://www.workleaf.vercel.app/
+                "
+                >
+                  www.workleaf.com
+                </a>
               </h1>
             </div>
           </div>
@@ -873,7 +878,7 @@ const App = () => {
                 <h1 className="font-bold">Website</h1>
                 <h1 className="text-lg sm:text-2xl">
                   <a
-                    href="workleaf.vercel.app"
+                    href="https://workleaf.vercel.app/"
                     target="_blank"
                     className="text-blue-800 underline"
                   >
@@ -885,8 +890,14 @@ const App = () => {
 
             {/* Address Section */}
             <div className="h-auto w-[80%] text-white mb-6 flex sm:flex-row flex-col justify-start items-center">
-              <div className="h-[50px] w-[20%] flex justify-center items-center">
-                <IoLocationOutline className="h-full w-full" />
+              <div className="h-[100px] w-[20%] flex justify-center items-center">
+                <a
+                  href="https://maps.app.goo.gl/fSwzUW4YKbt171yZA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IoLocationOutline className="h-[50px] w-full" />
+                </a>
               </div>
               <div className="h-[130px] w-[80%] text-lg flex justify-start flex-col pl-6 sm:text-2xl">
                 <h1 className="font-bold">Address</h1>

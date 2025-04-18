@@ -861,7 +861,7 @@ const App = () => {
                   <a
                     href="mailto:swathi@workleaf.in"
                     target="_blank"
-                    className="text-blue-800 underline"
+                    className="text-blue-800 no-underline"
                   >
                     Swathi@workleaf.in
                   </a>
@@ -880,7 +880,7 @@ const App = () => {
                   <a
                     href="https://workleaf.vercel.app/"
                     target="_blank"
-                    className="text-blue-800 underline"
+                    className="text-blue-800 no-underline "
                   >
                     www.workleaf.com
                   </a>
@@ -896,18 +896,22 @@ const App = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <IoLocationOutline className="h-[50px] w-full" />
+                  <IoLocationOutline className="h-[50px] w-full " />
                 </a>
               </div>
-              <div className="h-[130px] w-[80%] text-lg flex justify-start flex-col pl-6 sm:text-2xl">
-                <h1 className="font-bold">Address</h1>
+              <a
+                href="https://maps.app.goo.gl/fSwzUW4YKbt171yZA"
+                target="_blank "
+                className="h-[130px] w-[80%] text-lg flex justify-start flex-col pl-6 sm:text-2xl text-blue-800 no-underline"
+              >
+                <h1 className="font-bold text-white">Address</h1>
                 <p className="text-sm sm:text-xl">
                   #663 Lakshmi Nilaya K R Puram,
                 </p>
                 <p className="text-sm sm:text-xl">
                   Bangalore, Karnataka-560036
                 </p>
-              </div>
+              </a>
             </div>
           </div>
         </div>

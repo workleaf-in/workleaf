@@ -435,25 +435,24 @@ const App = () => {
               </div>
               <div className="h-auto 2xl:w-[60%] 2xl:pl-2 w-[90%] sm:pl-30  mt-6 ml-4 mb-10">
                 <h5 className=" sm:text-xl text-sm font-bold mb-2">
-                  <span className="mr-5">i.</span>CONTIGENCY RECRUITMENT
+                  <span className="mr-5">i.</span>WAREHOUSE MANAGEMENT &
+                  LOGISTICS
                 </h5>
                 <h5 className=" sm:text-xl text-sm font-bold mb-2">
-                  <span className="mr-3">ii.</span>TRANSITION MANAGEMENT PROGRAM
+                  <span className="mr-3">ii.</span>ENGINEERING, MANUFACTURING, &
+                  INFRASTRUCTURE
                 </h5>
                 <h5 className=" sm:text-xl text-sm font-bold mb-2">
-                  <span className="mr-2">iii.</span>TURKEY STAFFING PROGRAM
+                  <span className="mr-2">iii.</span>INFORMATION TECHNOLOGY
                 </h5>
                 <h5 className=" sm:text-xl text-sm font-bold mb-2">
-                  <span className="mr-1">iv.</span>CROSS-BORDER RECRUITMENT
-                  PROGRAM
+                  <span className="mr-1">iv.</span>HEALTHCARE & HOSPITALITY
                 </h5>
                 <h5 className=" sm:text-xl text-sm font-bold mb-2">
-                  <span className="mr-1">iv.</span>CROSS-BORDER RECRUITMENT
-                  PROGRAM
+                  <span className="mr-1">iv.</span>BANKING & FINANCIAL SERVICES
                 </h5>
                 <h5 className=" sm:text-xl text-sm font-bold mb-2">
-                  <span className="mr-1">iv.</span>CROSS-BORDER RECRUITMENT
-                  PROGRAM
+                  <span className="mr-1">iv.</span>TRAVEL & TOURISM
                 </h5>
               </div>
             </div>
@@ -855,7 +854,7 @@ const App = () => {
                 <h1 className="font-bold">Mail</h1>
                 <h1 className="text-lg sm:text-2xl">
                   <a
-                    href="mailto:narendrachillal1900@gmail.com"
+                    href="mailto:swathi@workleaf.in"
                     target="_blank"
                     className="text-blue-800 underline"
                   >
